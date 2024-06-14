@@ -10,20 +10,18 @@ function FilterComponent(props) {
         <div className="toggleBtnBox">
           <ToggleButton
             label="dallas"
-            onChange={(e) => props.handleTableData(e, "cities", "dallas")}
-            checked={props.tableData.cities.includes("dallas")}
+            onChange={(e) => props.handleTableData(e, "city", "dallas")}
+            checked={props.tableData.city.includes("dallas")}
           />
           <ToggleButton
             label="san francisco"
-            onChange={(e) =>
-              props.handleTableData(e, "cities", "san francisco")
-            }
-            checked={props.tableData.cities.includes("san francisco")}
+            onChange={(e) => props.handleTableData(e, "city", "san francisco")}
+            checked={props.tableData.city.includes("san francisco")}
           />
           <ToggleButton
             label="denver"
-            checked={props.tableData.cities.includes("denver")}
-            onChange={(e) => props.handleTableData(e, "cities", "denver")}
+            checked={props.tableData.city.includes("denver")}
+            onChange={(e) => props.handleTableData(e, "city", "denver")}
           />
         </div>
       </div>
@@ -32,13 +30,13 @@ function FilterComponent(props) {
         <div className="toggleBtnBox">
           <ToggleButton
             label="One "
-            checked={props.tableData.categories.includes("one")}
-            onChange={(e) => props.handleTableData(e, "categories", "one")}
+            checked={props.tableData.category.includes("one")}
+            onChange={(e) => props.handleTableData(e, "category", "one")}
           />
           <ToggleButton
             label="Two"
-            checked={props.tableData.categories.includes("two")}
-            onChange={(e) => props.handleTableData(e, "categories", "two")}
+            checked={props.tableData.category.includes("two")}
+            onChange={(e) => props.handleTableData(e, "category", "two")}
           />
         </div>
       </div>
@@ -47,18 +45,18 @@ function FilterComponent(props) {
         <div className="toggleBtnBox">
           <ToggleButton
             label="A"
-            checked={props.tableData.types.includes("a")}
-            onChange={(e) => props.handleTableData(e, "types", "a")}
+            checked={props.tableData.type.includes("a")}
+            onChange={(e) => props.handleTableData(e, "type", "a")}
           />
           <ToggleButton
             label="B"
-            checked={props.tableData.types.includes("b")}
-            onChange={(e) => props.handleTableData(e, "types", "b")}
+            checked={props.tableData.type.includes("b")}
+            onChange={(e) => props.handleTableData(e, "type", "b")}
           />
           <ToggleButton
             label="C"
-            checked={props.tableData.types.includes("c")}
-            onChange={(e) => props.handleTableData(e, "types", "c")}
+            checked={props.tableData.type.includes("c")}
+            onChange={(e) => props.handleTableData(e, "type", "c")}
           />
         </div>
       </div>
@@ -67,13 +65,13 @@ function FilterComponent(props) {
         <div className="toggleBtnBox">
           <ToggleButton
             label="False"
-            checked={props.tableData.activeStates.includes("false")}
-            onChange={(e) => props.handleTableData(e, "activeStates", "false")}
+            checked={props.tableData.active.includes("false")}
+            onChange={(e) => props.handleTableData(e, "active", "false")}
           />
           <ToggleButton
             label="True"
-            checked={props.tableData.activeStates.includes("true")}
-            onChange={(e) => props.handleTableData(e, "activeStates", "true")}
+            checked={props.tableData.active.includes("true")}
+            onChange={(e) => props.handleTableData(e, "active", "true")}
           />
         </div>
       </div>
